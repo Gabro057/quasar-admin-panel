@@ -5,24 +5,20 @@
     <pre>{{ myVar }}</pre>
     <q-input v-model="myVar"></q-input>
     <pre>{{ computedEx }}</pre>
+    <q-btn label="Zmen na Gabro" @click="gabro"></q-btn>
   </q-page>
 </template>
 
-<script>
+<script setup>
 // import { computed } from '@vue/reactivity'
 import { computed, ref } from 'vue'
 
-export default {
-  setup () {
-    const myVar = ref('Some Message')
-    const computedEx = computed(() => {
-      return myVar.value + ' dalsi text'
-    })
+const myVar = ref('Some Message')
+const computedEx = computed(() => {
+  return myVar.value + ' dalsi text'
+})
 
-    return {
-      myVar,
-      computedEx
-    }
-  }
+const gabro = () => {
+  myVar.value = 'Gabro'
 }
 </script>

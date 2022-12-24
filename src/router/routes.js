@@ -9,8 +9,8 @@ const routes = [
         component: () => import('pages/IndexPage.vue')
       },
       {
-        path: 'one',
-        component: () => import('pages/OnePage.vue')
+        path: 'login',
+        component: () => import('src/pages/LoginPage.vue')
       },
       {
         path: 'two',
@@ -19,6 +19,10 @@ const routes = [
       {
         path: 'three',
         component: () => import('pages/ThreePage.vue')
+      },
+      {
+        path: 'users',
+        component: () => import('pages/UsersPage.vue')
       }
     ]
   },
