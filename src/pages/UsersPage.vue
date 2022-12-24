@@ -91,7 +91,6 @@ const createUserForm = ref({
             dense
             borderless
             color="white"
-            class="text-white"
           />
         </q-td>
       </template>

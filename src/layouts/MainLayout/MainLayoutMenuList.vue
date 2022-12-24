@@ -1,3 +1,7 @@
+<script setup>
+import menuItems from './menuItems'
+</script>
+
 <template>
   <q-list>
     <q-item class="bg-primary text-white">
@@ -8,10 +12,12 @@
       </q-item-section>
     </q-item>
     <q-item
-      to="/users"
+      v-for="item in menuItems"
+      :key="item.label"
+      :to="item.to"
     >
       <q-item-section>
-        Users
+        {{ item.label }}
       </q-item-section>
     </q-item>
     <q-item clickable>
@@ -21,6 +27,3 @@
     </q-item>
   </q-list>
 </template>
-
-<script setup>
-</script>
