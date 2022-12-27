@@ -1,3 +1,6 @@
+Youtube:
+https://www.youtube.com/watch?v=KFYlgjGHfOc
+
 # Quasar App (quasar-admin-panel)
 
 A Quasar Project
